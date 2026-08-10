@@ -1,0 +1,6 @@
+{
+  "name": "Android-Rclone ZCore",
+  "description": "Le Camion Blindé pour Cloud - NetSecurePro Rclone Sync & Security Hub for Android/Termux",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
