@@ -123,6 +123,18 @@ export const Header: React.FC<HeaderProps> = ({ activeTab, setActiveTab, onRunQu
           </button>
 
           <button
+            onClick={() => setActiveTab("crypto")}
+            className={`flex items-center space-x-2 px-3.5 py-2 text-xs font-semibold rounded-lg transition-all whitespace-nowrap ${
+              activeTab === "crypto"
+                ? "bg-slate-800 text-purple-400 border border-purple-500/30 shadow-sm"
+                : "text-slate-400 hover:text-slate-200 hover:bg-slate-800/50"
+            }`}
+          >
+            <ShieldCheck className="w-4 h-4 text-purple-400" />
+            <span>Dilithium5 (ML-DSA-87)</span>
+          </button>
+
+          <button
             onClick={() => setActiveTab("ai")}
             className={`flex items-center space-x-2 px-3.5 py-2 text-xs font-semibold rounded-lg transition-all whitespace-nowrap ${
               activeTab === "ai"

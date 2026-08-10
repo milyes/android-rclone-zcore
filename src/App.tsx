@@ -6,6 +6,7 @@ import { RemotesView } from "./components/RemotesView";
 import { VaultQueueView } from "./components/VaultQueueView";
 import { ComplianceCertView } from "./components/ComplianceCertView";
 import { AiAdvisorView } from "./components/AiAdvisorView";
+import { DilithiumVerifierView } from "./components/DilithiumVerifierView";
 import { TabType } from "./types";
 import { motion, AnimatePresence } from "motion/react";
 import { ShieldCheck, Heart } from "lucide-react";
@@ -71,6 +72,7 @@ export default function App() {
               {activeTab === "remotes" && <RemotesView />}
               {activeTab === "vault" && <VaultQueueView />}
               {activeTab === "cert" && <ComplianceCertView />}
+              {activeTab === "crypto" && <DilithiumVerifierView />}
               {activeTab === "ai" && <AiAdvisorView />}
             </motion.div>
           </AnimatePresence>

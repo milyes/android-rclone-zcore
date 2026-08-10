@@ -1,4 +1,4 @@
-export type TabType = "readme" | "terminal" | "remotes" | "vault" | "cert" | "ai";
+export type TabType = "readme" | "terminal" | "remotes" | "vault" | "cert" | "ai" | "crypto";
 
 export interface Remote {
   id: string;
@@ -17,6 +17,10 @@ export interface AuditLog {
   target: string;
   hash: string;
   signature: string;
+  dilithiumVerified?: boolean;
+  publicKeyFingerprint?: string;
+  signatureBytes?: number;
+  tamperProofState?: "VALID" | "REVOKED" | "WARNING";
 }
 
 export interface LocalFile {
