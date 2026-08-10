@@ -1,8 +1,15 @@
 # ANDROID-RCLONE ZCORE
 ### *Le Camion Blindé pour Cloud - Version NetSecurePro*
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
-[![Platform](https://img.shields.io/badge/Platform-Android%20%7C%20Termux-green.svg)]()
+<div align="center">
+
+[![NIST FIPS 204](https://img.shields.io/badge/Post--Quantum-NIST%20FIPS%20204%20(ML--DSA--87)-8B5CF6?style=for-the-badge&logo=shield&logoColor=white)](#)
+[![Loi 25 Ready](https://img.shields.io/badge/Conformit%C3%A9-Loi%2025%20%7C%20RGPD-10B981?style=for-the-badge&logo=check-circle&logoColor=white)](#)
+[![License: MIT](https://img.shields.io/badge/License-MIT-3B82F6?style=for-the-badge&logo=open-source-initiative&logoColor=white)](https://opensource.org/licenses/MIT)
+[![Platform](https://img.shields.io/badge/Platform-Android%20%7C%20Termux-06B6D4?style=for-the-badge&logo=android&logoColor=white)](#)
+[![Attestation](https://img.shields.io/badge/Homologation-NSP--LAW--AI--2026--9942--CERT-6366F1?style=for-the-badge&logo=probot&logoColor=white)](#)
+
+</div>
 
 **android-rclone** est un fork sécurisé de rclone optimisé pour Android et Termux.  
 Conçu pour les environnements **Offline-First, OT-Santé et PME** qui exigent une souveraineté totale des données.
@@ -77,9 +84,9 @@ Compatible avec l'écosystème *NetSecurePro Identity* : `did:zcore:`
 ---
 
 ### **ROADMAP 2026-2027**
-- [ ] **v1.1** : Intégration signature `ML-DSA-87 Dilithium5` pour les credentials
+- [x] **v1.1** : Intégration signature `ML-DSA-87 Dilithium5` pour les logs WORM & credentials (Scellage Post-Quantique NIST FIPS 204)
 - [ ] **v1.2** : Widget Android 1-clic Backup
-- [ ] **v1.3** : UI Graphique complète
+- [ ] **v1.3** : UI Graphique complète avec visualiseur SIGHUB intégrée
 
 ---
 
