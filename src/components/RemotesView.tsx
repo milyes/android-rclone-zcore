@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Cloud, Lock, Plus, CheckCircle, ShieldCheck, RefreshCw, Key, HardDrive } from "lucide-react";
 import { Remote } from "../types";
+import { GoogleDriveConnector } from "./GoogleDriveConnector";
 
 export const RemotesView: React.FC = () => {
   const [remotes, setRemotes] = useState<Remote[]>([]);
@@ -138,6 +139,9 @@ export const RemotesView: React.FC = () => {
           </div>
         </form>
       )}
+
+      {/* Google Drive OAuth Connector */}
+      <GoogleDriveConnector />
 
       {/* Remote Cards Grid */}
       <div className="grid md:grid-cols-2 gap-4">
