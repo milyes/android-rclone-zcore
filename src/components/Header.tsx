@@ -33,9 +33,9 @@ export const Header: React.FC<HeaderProps> = ({ activeTab, setActiveTab, onRunQu
 
           <div className="flex flex-wrap items-center gap-2 text-xs">
             {/* Cert Badge */}
-            <div className="flex items-center space-x-1.5 px-2.5 py-1 rounded-md bg-slate-800/90 border border-emerald-500/30 text-emerald-300 font-mono">
+            <div className="flex items-center space-x-1.5 px-2.5 py-1 rounded-md bg-emerald-950/80 border border-emerald-500/40 text-emerald-300 font-mono">
               <Award className="w-3.5 h-3.5 text-emerald-400" />
-              <span>NSP-LAW-AI-2026-9942-CERT</span>
+              <span>LICENCE NETSECUREPRO IA • NSP-LAW-AI-2026-9942-CERT</span>
             </div>
 
             {/* Crypto mode */}

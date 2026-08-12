@@ -3,6 +3,7 @@
 
 <div align="center">
 
+[![Licence NETSECUREPRO IA](https://img.shields.io/badge/Licence-NETSECUREPRO%20IA%20JURIDIQUE-059669?style=for-the-badge&logo=shield&logoColor=white)](#)
 [![NIST FIPS 204](https://img.shields.io/badge/Post--Quantum-NIST%20FIPS%20204%20(ML--DSA--87)-8B5CF6?style=for-the-badge&logo=shield&logoColor=white)](#)
 [![Loi 25 Ready](https://img.shields.io/badge/Conformit%C3%A9-Loi%2025%20%7C%20RGPD-10B981?style=for-the-badge&logo=check-circle&logoColor=white)](#)
 [![License: MIT](https://img.shields.io/badge/License-MIT-3B82F6?style=for-the-badge&logo=open-source-initiative&logoColor=white)](https://opensource.org/licenses/MIT)
@@ -97,5 +98,5 @@ Email Pro : `milyes@netsecurepro.ca`
 Page Pro : `https://facebook.netsecurepro.ca`  
 Montréal, Québec, Canada
 
-**Licence** : MIT. Utilisation commerciale autorisée.  
-**Classification** : Open Source - Niveau Souveraineté
+**Licence** : NETSECUREPRO IA JURIDIQUE (`NSP-LAW-AI-2026-9942-CERT`) & MIT. Utilisation commerciale et souveraine autorisée.  
+**Classification** : Open Source - Homologué Défense & IA Souveraine

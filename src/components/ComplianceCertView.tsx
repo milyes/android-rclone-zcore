@@ -1,7 +1,24 @@
-import React from "react";
-import { Award, ShieldCheck, CheckCircle2, Lock, FileCheck, ExternalLink } from "lucide-react";
+import React, { useState } from "react";
+import { Award, ShieldCheck, CheckCircle2, Lock, FileCheck, ExternalLink, Copy, Check } from "lucide-react";
 
 export const ComplianceCertView: React.FC = () => {
+  const [copied, setCopied] = useState(false);
+
+  const certText = `# CERTIFICAT DE LICENCE OFFICIEL - NETSECUREPRO IA JURIDIQUE
+
+Organisme d'Attestation: NETSECUREPRO SECURITY & LEGAL DIVISION
+N° Licence: NSP-LAW-AI-2026-9942-CERT
+Système Homologué: MILYES-IA V9 NANS CORE
+Statut de Conformité: CERTIFIÉ & CONFORME RGPD / EU AI ACT / LOI 25
+Date d'Émission: 2026-07-26
+Signature Numérique SHA256: 9f86d081884c7d659a2feaa0c55ad015a3bf4f1b2b0b822cd15d6c15b0f00a08`;
+
+  const handleCopy = () => {
+    navigator.clipboard.writeText(certText);
+    setCopied(true);
+    setTimeout(() => setCopied(false), 3000);
+  };
+
   return (
     <div className="space-y-6 max-w-4xl mx-auto py-2">
       {/* Official Certificate Paper Frame */}
@@ -9,8 +26,14 @@ export const ComplianceCertView: React.FC = () => {
         <div className="absolute top-0 right-0 w-80 h-80 bg-emerald-500/5 rounded-full blur-3xl pointer-events-none" />
 
         {/* Certificate Header */}
-        <div className="text-center space-y-2 border-b border-slate-800 pb-6">
-          <div className="inline-flex p-3 bg-emerald-500/10 border border-emerald-500/30 rounded-2xl text-emerald-400 mb-2">
+        <div className="text-center space-y-2 border-b border-slate-800 pb-6 relative">
+          <div className="flex items-center justify-center gap-2 mb-2">
+            <span className="px-3 py-1 bg-emerald-500/20 text-emerald-300 border border-emerald-500/30 rounded-full text-xs font-mono font-bold tracking-wider uppercase">
+              Licence NETSECUREPRO IA JURIDIQUE
+            </span>
+          </div>
+
+          <div className="inline-flex p-3 bg-emerald-500/10 border border-emerald-500/30 rounded-2xl text-emerald-400 my-2">
             <Award className="w-10 h-10" />
           </div>
           <h2 className="text-xl md:text-2xl font-black text-white tracking-wider uppercase">
@@ -19,6 +42,14 @@ export const ComplianceCertView: React.FC = () => {
           <p className="text-sm font-bold text-emerald-400 tracking-widest uppercase">
             NETSECUREPRO IA JURIDIQUE & DÉFENSE SOUVERAINE
           </p>
+
+          <button
+            onClick={handleCopy}
+            className="absolute top-0 right-0 px-3 py-1.5 bg-slate-800 hover:bg-slate-700 text-slate-200 border border-slate-700 rounded-xl text-xs font-mono flex items-center space-x-1.5 transition-all"
+          >
+            {copied ? <Check className="w-3.5 h-3.5 text-emerald-400" /> : <Copy className="w-3.5 h-3.5 text-slate-400" />}
+            <span>{copied ? "Copié !" : "Copier Attestation"}</span>
+          </button>
         </div>
 
         {/* Attestation Grid */}
